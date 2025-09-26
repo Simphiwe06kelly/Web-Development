@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scentopia | Contact</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo"><a href="index.html">Sentopia</a></div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Contact Us</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </nav>
+  
+    <div class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <main>
+    <!-- Split hero with Google Map on the left -->
+    <section class="contact-hero" aria-labelledby="contactTitle">
+      
+      <!-- Google Map -->
+      <div class="map-embed" aria-label="Map to Sentopia">
+        <iframe
+          src="https://www.google.com/maps?q=123%20Luxury%20Lane%2C%20Cape%20Town&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <!-- Right-hand copy -->
+      <div class="hero-copy">
+        <h1 id="contactTitle">Contact our friendly team</h1>
+        <p>
+          Tell us how we can help. Whether you have a question about notes, longevity, or bespoke blends,
+          our team responds with clarity, comfort, and care.
+        </p>
+
+        <!-- Cards -->
+        <div class="card-grid" role="list">
+          <article class="card" role="listitem">
+            <h3>Email us</h3>
+            <p><a href="mailto:info@sentopia.com">info@sentopia.com</a></p>
+          </article>
+          <article class="card" role="listitem">
+            <h3>WhatsApp</h3>
+            <p><a href="https://wa.me/27838968976">+27 83 896 8976</a></p>
+          </article>
+          <article class="card" role="listitem">
+            <h3>Visit us</h3>
+            <p>123 Luxury Lane, Cape Town</p>
+          </article>
+          <article class="card" role="listitem">
+            <h3>Call us</h3>
+            <p><a href="tel:+27838968976">+27 83 896 8976</a></p>
+          </article>
+        </div>
+
+        <!-- Form -->
+        <form class="form-wrap" action="#" method="post" novalidate>
+          <div class="form-field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="Ms N. Xaba" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-field">
+            <label for="phone">Phone (optional)</label>
+            <input id="phone" name="phone" type="tel" placeholder="+27 …">
+          </div>
+
+          <div class="form-field">
+            <label for="topic">Topic</label>
+            <input id="topic" name="topic" type="text" placeholder="Wholesale, custom scent, order status…">
+          </div>
+
+          <div class="form-field" style="grid-column:1/-1">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+          </div>
+
+          <button class="btn" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 Sentopia. All rights reserved.</p>
+  </footer>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
