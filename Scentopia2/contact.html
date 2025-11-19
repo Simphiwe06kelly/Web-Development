@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contact Sentopia - Luxury perfumes. Visit our stores in Cape Town & Johannesburg, or reach us via email, phone, or contact form.">
+  <meta name="keywords" content="Sentopia contact, luxury perfume stores, Cape Town, Johannesburg, fragrance contact">
+  <title>Sentopia | Contact Us - Multiple Locations</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo"><a href="index.html">Sentopia</a></div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="enquiry.html">Enquire</a></li>
+      </ul>
+    </nav>
+  
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <!-- Multi-Location Map -->
+      <div class="map-container">
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13294.853063299665!2d18.42438136977538!3d-33.92539499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc67649e11bd4b%3A0xcb0cdf8dbf50b0e2!2sV%26A%20Waterfront!5e0!3m2!1sen!2sza!4v1700000000000!5m2!1sen!2sza"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="location-tabs">
+          <button class="location-tab active" data-location="cape-town">Cape Town</button>
+          <button class="location-tab" data-location="johannesburg">Johannesburg</button>
+        </div>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="hero-copy">
+        <h1>Visit Our Luxury Boutiques</h1>
+        <p>
+          Experience Sentopia fragrances in person at our exclusive boutiques. 
+          Our knowledgeable staff will guide you through our collections and help you find your signature scent.
+        </p>
+
+        <!-- Location Information -->
+        <div class="locations-grid">
+          <div class="location-card active" id="cape-town-location">
+            <h3>Cape Town Boutique</h3>
+            <div class="location-info">
+              <div class="location-detail">
+                <strong>Address:</strong>
+                <p>Victoria & Alfred Waterfront<br>Shop 45, Lower Level<br>Cape Town, 8001</p>
+              </div>
+              <div class="location-detail">
+                <strong>Hours:</strong>
+                <p>Monday - Saturday: 9:00 - 20:00<br>Sunday: 10:00 - 18:00<br>Public Holidays: 10:00 - 16:00</p>
+              </div>
+              <div class="location-detail">
+                <strong>Contact:</strong>
+                <p>+27 21 123 4567<br>capetown@sentopia.com</p>
+              </div>
+            </div>
+            <div class="location-features">
+              <span class="feature-tag">Flagship Store</span>
+              <span class="feature-tag">Personal Consultations</span>
+              <span class="feature-tag">Gift Wrapping</span>
+            </div>
+          </div>
+
+          <div class="location-card" id="johannesburg-location">
+            <h3>Johannesburg Boutique</h3>
+            <div class="location-info">
+              <div class="location-detail">
+                <strong>Address:</strong>
+                <p>Sandton City Shopping Centre<br>Upper Level, Luxury Wing<br>Johannesburg, 2196</p>
+              </div>
+              <div class="location-detail">
+                <strong>Hours:</strong>
+                <p>Monday - Saturday: 9:00 - 19:00<br>Sunday: 10:00 - 17:00<br>Public Holidays: 10:00 - 16:00</p>
+              </div>
+              <div class="location-detail">
+                <strong>Contact:</strong>
+                <p>+27 11 234 5678<br>johannesburg@sentopia.com</p>
+              </div>
+            </div>
+            <div class="location-features">
+              <span class="feature-tag">Luxury Wing</span>
+              <span class="feature-tag">Corporate Gifting</span>
+              <span class="feature-tag">Private Events</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Cards -->
+        <div class="card-grid">
+          <article class="card">
+            <h3>General Enquiries</h3>
+            <p><a href="mailto:info@sentopia.com">info@sentopia.com</a></p>
+            <p>For general questions and information</p>
+          </article>
+          <article class="card">
+            <h3>Customer Service</h3>
+            <p><a href="tel:+27838968976">+27 83 896 8976</a></p>
+            <p>Mon-Fri: 8:00-17:00 SAT: 9:00-13:00</p>
+          </article>
+          <article class="card">
+            <h3>WhatsApp Business</h3>
+            <p><a href="https://wa.me/27838968976">+27 83 896 8976</a></p>
+            <p>Quick responses during business hours</p>
+          </article>
+          <article class="card">
+            <h3>Wholesale & Business</h3>
+            <p><a href="mailto:wholesale@sentopia.com">wholesale@sentopia.com</a></p>
+            <p>For bulk orders and partnerships</p>
+          </article>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="form-wrap contact-form" action="#" method="post" novalidate>
+          <div class="form-field">
+            <label for="name">Your Name *</label>
+            <input id="name" name="name" type="text" placeholder="Ms N. Xaba" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email Address *</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-field">
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" placeholder="+27 83 896 8976">
+          </div>
+
+          <div class="form-field">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a subject</option>
+              <option value="general">General Inquiry</option>
+              <option value="product">Product Information</option>
+              <option value="order">Order Support</option>
+              <option value="wholesale">Wholesale Inquiry</option>
+              <option value="feedback">Feedback & Suggestions</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="preferred-store">Preferred Store Location</label>
+            <select id="preferred-store" name="preferred_store">
+              <option value="">Select preferred location</option>
+              <option value="cape-town">Cape Town Boutique</option>
+              <option value="johannesburg">Johannesburg Boutique</option>
+              <option value="online">Online Only</option>
+              <option value="no-preference">No Preference</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Your Message *</label>
+            <textarea id="message" name="message" placeholder="How can we assist you today?" required></textarea>
+          </div>
+
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 Sentopia. All rights reserved.</p>
+  </footer>
+ 
+  <script src="script.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Enquire about Sentopia luxury perfumes, wholesale opportunities, custom scents, bulk orders, and exclusive partnerships.">
+  <meta name="keywords" content="perfume enquiry, wholesale perfumes, custom scents, bulk orders, luxury fragrance partnership, exclusive collection">
+  <title>Sentopia | Product & Service Enquiries</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="enquiry.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo"><a href="index.html">Sentopia</a></div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="enquiry.html" class="active">Enquire</a></li>
+      </ul>
+    </nav>
+  
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <div class="hero-copy">
+        <h1>Product & Service Enquiries</h1>
+        <p>
+          Interested in our luxury fragrances for your business or special occasion? 
+          Enquire about wholesale pricing, custom scent creation, bulk orders, 
+          or exclusive partnerships. Let us help you find the perfect fragrance solution.
+        </p>
+
+        <!-- Enquiry Type Cards -->
+        <div class="card-grid">
+          <article class="card">
+            <h3>Wholesale Pricing</h3>
+            <p>For retailers, hotels, and corporate clients</p>
+            <span class="card-badge">Most Popular</span>
+          </article>
+          <article class="card">
+            <h3>Custom Scents</h3>
+            <p>Bespoke fragrance creation for your brand</p>
+          </article>
+          <article class="card">
+            <h3>Bulk Orders</h3>
+            <p>Large quantities for events and gifting</p>
+          </article>
+          <article class="card">
+            <h3>Exclusive Partnerships</h3>
+            <p>Collaborate on limited edition collections</p>
+          </article>
+        </div>
+
+        <!-- Enquiry Form -->
+        <form class="form-wrap enquiry-form" action="#" method="post" novalidate>
+          <div class="form-field">
+            <label for="enquiry-name">Your Name *</label>
+            <input id="enquiry-name" name="name" type="text" placeholder="Ms N. Xaba" required>
+          </div>
+
+          <div class="form-field">
+            <label for="enquiry-email">Email Address *</label>
+            <input id="enquiry-email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-field">
+            <label for="enquiry-company">Company/Organization</label>
+            <input id="enquiry-company" name="company" type="text" placeholder="Your company name">
+          </div>
+
+          <div class="form-field">
+            <label for="enquiry-phone">Phone Number *</label>
+            <input id="enquiry-phone" name="phone" type="tel" placeholder="+27 83 896 8976" required>
+          </div>
+
+          <div class="form-field">
+            <label for="enquiry-type">Enquiry Type *</label>
+            <select id="enquiry-type" name="enquiry_type" required>
+              <option value="">Select enquiry type</option>
+              <option value="wholesale">Wholesale Pricing & Distribution</option>
+              <option value="custom">Custom Scent Creation</option>
+              <option value="bulk">Bulk Order (50+ units)</option>
+              <option value="partnership">Exclusive Partnership</option>
+              <option value="product-info">Product Information</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-field" id="product-interest-field">
+            <label for="enquiry-products">Products of Interest</label>
+            <select id="enquiry-products" name="products" multiple>
+              <option value="homme-collection">For Him Collection</option>
+              <option value="femme-collection">For Her Collection</option>
+              <option value="bestsellers">Bestsellers</option>
+              <option value="all-products">All Products</option>
+            </select>
+            <small>Hold Ctrl/Cmd to select multiple options</small>
+          </div>
+
+          <div class="form-field" id="quantity-field">
+            <label for="enquiry-quantity">Estimated Order Quantity</label>
+            <input id="enquiry-quantity" name="quantity" type="text" placeholder="e.g., 100-200 units monthly">
+          </div>
+
+          <div class="form-field" id="budget-field">
+            <label for="enquiry-budget">Budget Range</label>
+            <select id="enquiry-budget" name="budget">
+              <option value="">Select budget range</option>
+              <option value="under-10k">Under R10,000</option>
+              <option value="10k-50k">R10,000 - R50,000</option>
+              <option value="50k-100k">R50,000 - R100,000</option>
+              <option value="over-100k">Over R100,000</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="enquiry-message">Your Enquiry Details *</label>
+            <textarea id="enquiry-message" name="message" placeholder="Please provide specific details about your enquiry, including preferred products, timeline requirements, and any special requests..." required></textarea>
+          </div>
+
+          <div class="form-field">
+            <label class="checkbox-label">
+              <input type="checkbox" name="pricing_info" checked>
+              <span>Please include wholesale pricing information</span>
+            </label>
+          </div>
+
+          <div class="form-field">
+            <label class="checkbox-label">
+              <input type="checkbox" name="catalog" checked>
+              <span>Send me the complete product catalog</span>
+            </label>
+          </div>
+
+          <button class="btn" type="submit">Submit Enquiry</button>
+        </form>
+
+        <!-- Response Section -->
+        <div id="enquiry-response" class="response-section">
+          <h2>Thank You for Your Enquiry</h2>
+          <div id="response-content">
+            <!-- Dynamic content will be inserted here -->
+          </div>
+          <button class="btn" id="new-enquiry-btn">Submit Another Enquiry</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 Sentopia. All rights reserved.</p>
+  </footer>
+ 
+  <script src="script.js"></script>
+  <script src="enquiry.js"></script>
+</body>
+</html>

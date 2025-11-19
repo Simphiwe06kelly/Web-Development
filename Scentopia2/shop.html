@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop Sentopia luxury perfumes - Exclusive collections for him and her. Premium fragrances with elegant packaging and lasting scents.">
+  <meta name="keywords" content="buy perfumes online, luxury fragrance shop, men's perfume, women's perfume, premium scents">
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sentopia.com/shop.html">
+  <meta property="og:title" content="Sentopia | Shop Luxury Perfumes">
+  <meta property="og:description" content="Shop exclusive Sentopia perfume collections for men and women. Luxury fragrances with sophisticated packaging.">
+  <meta property="og:image" content="https://sentopia.com/images/og-image.jpg">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://sentopia.com/shop.html">
+  <meta property="twitter:title" content="Sentopia | Shop Luxury Perfumes">
+  <meta property="twitter:description" content="Shop exclusive Sentopia perfume collections for men and women. Luxury fragrances with sophisticated packaging.">
+  <meta property="twitter:image" content="https://sentopia.com/images/og-image.jpg">
+  <title>Sentopia | Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <a href="index.html">Scentopia</a>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- SHOP HEADER WITH SEARCH & FILTER -->
+  <section class="shop-header">
+    <h1>our collection</h1>
+  </section>
+
+  <!-- SEARCH & FILTER SECTION -->
+  <section class="search-filter-container">
+    <div class="search-box">
+      <input type="text" class="search-input" id="search-input" placeholder="Search perfumes...">
+      <span class="search-icon">🔍</span>
+    </div>
+    
+    <div class="filter-container">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All Products</button>
+        <button class="filter-btn" data-filter="homme">For Him</button>
+        <button class="filter-btn" data-filter="femme">For Her</button>
+        <button class="filter-btn" data-filter="bestseller">Bestsellers</button>
+      </div>
+      
+      <div class="sort-options">
+        <label>Sort by:</label>
+        <select class="sort-select" id="sort-select">
+          <option value="default">Default</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="name">Name: A to Z</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="results-info" id="results-info"></div>
+  </section>
+
+  <!-- FOR HIM HERO -->
+  <section class="hero" id="for-him-section">
+    <img src="images/for him.png" alt="For Him Collection - Luxury men's perfumes" class="hero-img">
+    <div class="hero-text">
+      <h1>for Him</h1>
+    </div>
+  </section>
+
+  <!-- FOR HIM PRODUCTS -->
+  <section class="shop-section">
+    <div class="perfume-grid" id="homme-grid">
+      <div class="product-card" data-category="homme" data-name="Homme 1" data-price="800">
+        <div class="product-image">
+          <img src="images/homme1.png" alt="Sentopia Homme 1 Luxury Perfume for Men" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Homme 1</h3>
+          <p class="product-price">R 800,00</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="homme" data-name="Homme 2" data-price="850">
+        <div class="product-image">
+          <img src="images/homme2.png" alt="Sentopia Homme 2 Premium Fragrance for Men" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Homme 2</h3>
+          <p class="product-price">R 850,00</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="homme" data-name="Homme 3" data-price="900">
+        <div class="product-image">
+          <img src="images/homme3.png" alt="Sentopia Homme 3 Elegant Men's Cologne" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Homme 3</h3>
+          <p class="product-price">R 900,00</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="homme" data-name="Homme 4" data-price="950">
+        <div class="product-image">
+          <img src="images/homme4.png" alt="Sentopia Homme 4 Sophisticated Men's Fragrance" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Homme 4</h3>
+          <p class="product-price">R 950,00</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="homme" data-name="Homme 5" data-price="1000">
+        <div class="product-image">
+          <img src="images/homme5.png" alt="Sentopia Homme 5 Premium Men's Scent" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Homme 5</h3>
+          <p class="product-price">R 1000,00</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="homme" data-name="Homme 6" data-price="1050">
+        <div class="product-image">
+          <img src="images/homme6.png" alt="Sentopia Homme 6 Luxury Men's Perfume" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Homme 6</h3>
+          <p class="product-price">R 1050,00</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="homme" data-name="Homme 7" data-price="1100">
+        <div class="product-image">
+          <img src="images/homme7.png" alt="Sentopia Homme 7 Exclusive Men's Fragrance" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Homme 7</h3>
+          <p class="product-price">R 1100,00</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="homme" data-name="Homme 8" data-price="1150">
+        <div class="product-image">
+          <img src="images/homme8.png" alt="Sentopia Homme 8 Signature Men's Scent" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Homme 8</h3>
+          <p class="product-price">R 1150,00</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="homme" data-name="Homme 9" data-price="1200">
+        <div class="product-image">
+          <img src="images/homme9.png" alt="Sentopia Homme 9 Premium Men's Cologne" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Homme 9</h3>
+          <p class="product-price">R 1200,00</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="homme" data-name="Homme 10" data-price="1250">
+        <div class="product-image">
+          <img src="images/homme10.png" alt="Sentopia Homme 10 Luxury Men's Fragrance" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Homme 10</h3>
+          <p class="product-price">R 1250,00</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="homme" data-name="Homme 11" data-price="1300">
+        <div class="product-image">
+          <img src="images/homme11.png" alt="Sentopia Homme 11 Elegant Men's Perfume" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Homme 11</h3>
+          <p class="product-price">R 1300,00</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="homme" data-name="Homme 12" data-price="1350">
+        <div class="product-image">
+          <img src="images/homme12.png" alt="Sentopia Homme 12 Premium Men's Scent" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Homme 12</h3>
+          <p class="product-price">R 1350,00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOR HER HERO -->
+  <section class="hero" id="for-her-section">
+    <img src="images/for her.png" alt="For Her Collection - Luxury women's perfumes" class="hero-img">
+    <div class="hero-text">
+      <h1>for Her</h1>
+    </div>
+  </section>
+
+  <!-- FOR HER PRODUCTS -->
+  <section class="shop-section">
+    <div class="perfume-grid" id="femme-grid">
+      <div class="product-card" data-category="femme" data-name="Femme 1" data-price="800">
+        <div class="product-image">
+          <img src="images/femme1.png" alt="Sentopia Femme 1 Elegant Perfume for Women" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Femme 1</h3>
+          <p class="product-price">R 800,00</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="femme" data-name="Femme 2" data-price="850">
+        <div class="product-image">
+          <img src="images/femme2.png" alt="Sentopia Femme 2 Luxury Fragrance for Women" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Femme 2</h3>
+          <p class="product-price">R 850,00</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="femme" data-name="Femme 3" data-price="900">
+        <div class="product-image">
+          <img src="images/femme3.png" alt="Sentopia Femme 3 Premium Women's Perfume" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Femme 3</h3>
+          <p class="product-price">R 900,00</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="femme" data-name="Femme 4" data-price="950">
+        <div class="product-image">
+          <img src="images/femme4.png" alt="Sentopia Femme 4 Sophisticated Women's Scent" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Femme 4</h3>
+          <p class="product-price">R 950,00</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="femme" data-name="Femme 5" data-price="1000">
+        <div class="product-image">
+          <img src="images/femme5.png" alt="Sentopia Femme 5 Luxury Women's Fragrance" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Femme 5</h3>
+          <p class="product-price">R 1000,00</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="femme" data-name="Femme 6" data-price="1050">
+        <div class="product-image">
+          <img src="images/femme6.png" alt="Sentopia Femme 6 Elegant Women's Perfume" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Femme 6</h3>
+          <p class="product-price">R 1050,00</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="femme" data-name="Femme 7" data-price="1100">
+        <div class="product-image">
+          <img src="images/femme7.png" alt="Sentopia Femme 7 Premium Women's Cologne" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Femme 7</h3>
+          <p class="product-price">R 1100,00</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="femme" data-name="Femme 8" data-price="1150">
+        <div class="product-image">
+          <img src="images/femme8.png" alt="Sentopia Femme 8 Luxury Women's Scent" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Femme 8</h3>
+          <p class="product-price">R 1150,00</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="femme" data-name="Femme 9" data-price="1200">
+        <div class="product-image">
+          <img src="images/femme9.png" alt="Sentopia Femme 9 Exclusive Women's Fragrance" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Femme 9</h3>
+          <p class="product-price">R 1200,00</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="femme" data-name="Femme 10" data-price="1250">
+        <div class="product-image">
+          <img src="images/femme10.png" alt="Sentopia Femme 10 Signature Women's Perfume" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Femme 10</h3>
+          <p class="product-price">R 1250,00</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="femme" data-name="Femme 11" data-price="1300">
+        <div class="product-image">
+          <img src="images/femme11.png" alt="Sentopia Femme 11 Premium Women's Fragrance" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Femme 11</h3>
+          <p class="product-price">R 1300,00</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="femme" data-name="Femme 12" data-price="1350">
+        <div class="product-image">
+          <img src="images/femme12.png" alt="Sentopia Femme 12 Luxury Women's Scent" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Femme 12</h3>
+          <p class="product-price">R 1350,00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 Sentopia. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
